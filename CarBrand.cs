@@ -13,7 +13,7 @@ namespace FirstCode{
       set { carBrands[i] = value; }
         }
         public IEnumerator GetEnumerator() {
-            return carBrands.GetEnumerator();
+            return new CarEnumerator(carBrands);
         }
     }
 }
